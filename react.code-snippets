@@ -1,0 +1,120 @@
+
+{"import react, useState, useEffect": {
+    "prefix": "ir",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["import React, { useState, useEffect } from 'react';"],
+    "description": "import react,use state,use effect"
+  },
+
+
+
+  "const": {
+    "prefix": "c",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["const ${1} = ${2}"],
+    "description": "const shortcut"
+  },
+
+
+
+
+  "express require": {
+    "prefix": "ee",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["const express = require('express');",
+  "const app = express(); "],
+    "description": "express shortcut"
+  },
+
+
+  "if": {
+    "prefix": "i",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["if (${1}) {",
+    "\t${2}",
+  "  }"],
+    "description": "const shortcut"
+  },
+
+
+
+
+"Use EffectFull": {
+    "prefix": "uee",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["useEffect(() => {",
+    "\t$1",
+    " \t"
+    "return () => {"
+    "\t\t$2",
+    "\t}"
+    "},  [ $3 ])"],
+    "description": "use effectfull"
+  },
+
+ "Use Effect": {
+    "prefix": "ue",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": [" useEffect(() => {",
+     "\t",
+     "\t},[$1])"],
+    "description": "use effect"
+  },
+
+  "Use State": {
+    "prefix": "us",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["  const [${1}, set${1}] = useState();"],
+    "description": "use state"
+  },
+  "Arrow function": {
+    "prefix": "yy",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["($1)=>{$2}"],
+    "description": "()=>"
+  },
+  "Print to console": {
+    "prefix": "cl",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": ["console.log(`$1`)"],
+    "description": "console.log"
+  },
+  "reactComponent": {
+    "prefix": "rfc",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": [
+      "function ${1:${TM_FILENAME_BASE}}() {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t$0",
+      "\t\t</div>",
+      "\t)",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}",
+      ""
+    ],
+    "description": "React component"
+  },
+  "reactStyledComponent": {
+    "prefix": "rsc",
+    "scope": "javascript,typescript,javascriptreact",
+    "body": [
+      "import styled from 'styled-components'",
+      "",
+      "const Styled${TM_FILENAME_BASE} = styled.$0``",
+      "",
+      "function ${TM_FILENAME_BASE}() {",
+      "\treturn (",
+      "\t\t<Styled${TM_FILENAME_BASE}>",
+      "\t\t\t${TM_FILENAME_BASE}",
+      "\t\t</Styled${TM_FILENAME_BASE}>",
+      "\t)",
+      "}",
+      "",
+      "export default ${TM_FILENAME_BASE}",
+      ""
+    ],
+    "description": "React styled component"
+  }
+}
